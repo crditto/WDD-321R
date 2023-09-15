@@ -1,32 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
 
+h1 {
+    text-align: center;
+}
+
 h1 a:link {
     font-family: Lora;
+    font-size: 50px;
     color: #333;
     text-decoration: none;
 }
 
-body {
+nav {
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
+    text-decoration: none;
+}
+
+nav {
+    border-top: 3px solid #d0d0d0;
+    border-bottom: 3px solid #d0d0d0;
 }
 
 nav a:link {
   text-decoration: none;
   text-transform: uppercase;
   color: #666;
-  border-top: 3px solid #d0d0d0;
-  border-bottom: 3px solid #d0d0d0;
 }
 
-nav a:visited{
+nav a:visited {
   color:#666;
 } 
 
-nav a:active{
+nav a:active {
   color:#DEB887;
 } 
 
 nav a:hover {
      color: #00ddff;
+  }
+
+ ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+li{
+    display: inline-block;
+    padding: 0 0.5rem;
+}
+
+a:link {
+    color: #333;
+    text-decoration: none;
+}
+
+a:visited{
+    color:#666;
+  } 
+  
+a:active {
+    color:#DEB887;
+  } 
+  
+a:hover {
+       color: #00ddff;
+    }
+
+.post-date {
+    text-align: right;
+    border-right: 3px solid #d0d0d0;
+}
+
+ article{
+    display: grid;
+    gap: 1rem;
+    border-bottom: 3px solid #d0d0d0;
+ }
+
+ @media (min-width: 40em) {
+    article{
+    grid-template-columns: 20% 1fr;
+    }
   }
