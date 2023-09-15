@@ -13,7 +13,10 @@ body {
 
 nav a:link {
   text-decoration: none;
+  text-transform: uppercase;
   color: #666;
+  border-top: 3px solid #d0d0d0;
+  border-bottom: 3px solid #d0d0d0;
 }
 
 nav a:visited{
