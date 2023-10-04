@@ -1,17 +1,51 @@
-/* Error: Undefined variable.
- *    ,
- * 16 |     @media (min-width: $break-small) {
- *    |                        ^^^^^^^^^^^^
- *    '
- *   styles.scss 16:24  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 16 \2502      @media (min-width: $break-small) {\d\a    \2502                         ^^^^^^^^^^^^\a    \2575 \a   styles.scss 16:24  root stylesheet";
+body {
+  background: white;
 }
+@media (max-width: 60em) {
+  body {
+    background: red;
+  }
+}
+@media (max-width: 31em) {
+  body {
+    background: cyan;
+  }
+}
+@media (max-width: 20em) {
+  body {
+    background: green;
+  }
+}
+@media (max-width 1000px) {
+  body {
+    background: yellow;
+  }
+}
+
+#contactform {
+  background-color: white;
+}
+#contactform input, #contactform textarea {
+  background-color: white;
+  flex: 2;
+}
+@media (max-width: 960px) {
+  #contactform {
+    background: yellow;
+  }
+}
+@media (xlarge) {
+  #contactform {
+    background: yellow;
+  }
+}
+@media (min-width: 20em) {
+  #contactform {
+    width: 90%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
